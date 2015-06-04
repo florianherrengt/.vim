@@ -6,3 +6,6 @@ cd ~/.vim/bundle/YouCompleteMe
 
 bundle/tern_for_vim
 npm install
+
+
+cd vim-jsbeautify && git submodule update --init --recursive
