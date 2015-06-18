@@ -130,3 +130,5 @@ autocmd FileType javascript,css inoremap <silent> <Leader>; <c-o>:call cosco#com
 
 " better bracket indent
 autocmd FileType javascript inoremap {<CR> {<CR>}<Esc><S-o>
+
+autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : ['standard']
