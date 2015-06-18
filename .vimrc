@@ -132,3 +132,4 @@ autocmd FileType javascript,css inoremap <silent> <Leader>; <c-o>:call cosco#com
 autocmd FileType javascript inoremap {<CR> {<CR>}<Esc><S-o>
 
 autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : ['standard']
+autocmd BufWritePre * :%s/\s\+$//e
